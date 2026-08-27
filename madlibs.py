@@ -10,3 +10,6 @@ ASSIGNMENT REQUIREMENTS
 [ ] 6. Program runs without errors.
 -----------------------------------------------------------------------
 """
+
+name = input("please enter a name: ")
+print(name)
