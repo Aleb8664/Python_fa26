@@ -5,8 +5,8 @@ ASSIGNMENT REQUIREMENTS
 [X] 1. Header Docstring included.
 [X] 2. Ask user for Monthly Income (float).
 [X] 3. Ask user for 5 DIFFERENT expense amounts (float)(Rent, Utilities, etc.)
-[ ] 4. Calculate Total Expenses and Remaining Balance.
-[ ] 5. Calculate Percentage of Income Spent.
+[X] 4. Calculate Total Expenses and Remaining Balance.
+[X] 5. Calculate Percentage of Income Spent.
 [ ] 6. Output formatted to 2 decimal places (:,.2f or :.2%).
 -----------------------------------------------------------------------
 """
@@ -41,7 +41,7 @@ print(f"{user_name}, You entered ${subscriptions_monthly:,.2f}!\n")
 other_monthly = float(input("Please enter any other monthly spending:  "))
 print(f"{user_name}, You entered ${other_monthly:,.2f}!\n")
 print(
-    "Congratulations the questioning is now over, some calculations will be made and displayed below \n\n\n"
+    "Congratulations the questioning is now over, some calculations will be made and displayed below \n"
 )
 
 # this section will be the calculations
@@ -55,5 +55,19 @@ expenses = (
     + subscriptions_monthly
     + other_monthly
 )
-print(expenses)
+print(f"expenses: ${expenses:,.2}!")
+
+remaining_balance = income_monthly - expenses
+print(f"remaining balance: ${remaining_balance:,.2}!")
+
+percentage_spent = expenses / income_monthly
+print(f"Percentage spent: {percentage_spent:,.2%}!")
+
+# Formatter to fix gaps in the table eg when using the print statement with the allignment options it would output $     400 instead of $400 (is there a better way of doing this probobally)
+formatter_car
+formatter_electric
+Formatter_
+
+
 # this will be the output
+print(f"{'Rent':<20} ${rent_monthly:>10,.2f}")
