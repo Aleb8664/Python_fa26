@@ -30,14 +30,30 @@ water_monthly = float(input("Please enter your monthly water bill:  "))
 print(f"{user_name}, You entered ${water_monthly:,.2f}!\n")
 internet_monthly = float(input("Please enter your monthly home internet bill:  "))
 print(f"{user_name}, You entered ${internet_monthly:,.2f}!\n")
-cell_monthly float(input("Please enter your monthly Cellphone bill:  "))
+cell_monthly = float(input("Please enter your monthly Cellphone bill:  "))
 print(f"{user_name}, You entered ${cell_monthly:,.2f}!\n")
-subscriptions_monthly = float(input("Please enter your monthly spending on subscription services Netflix, Youtube, Cable tv, ETC..:  "))
+subscriptions_monthly = float(
+    input(
+        "Please enter your monthly spending on subscription services Netflix, Youtube, Cable tv, ETC..:  "
+    )
+)
 print(f"{user_name}, You entered ${subscriptions_monthly:,.2f}!\n")
 other_monthly = float(input("Please enter any other monthly spending:  "))
 print(f"{user_name}, You entered ${other_monthly:,.2f}!\n")
-
+print(
+    "Congratulations the questioning is now over, some calculations will be made and displayed below \n\n\n"
+)
 
 # this section will be the calculations
-
+expenses = (
+    car_monthly
+    + rent_monthly
+    + electric_monthly
+    + water_monthly
+    + internet_monthly
+    + cell_monthly
+    + subscriptions_monthly
+    + other_monthly
+)
+print(expenses)
 # this will be the output
