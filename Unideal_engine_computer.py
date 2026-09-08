@@ -3,10 +3,10 @@
 ASSIGNMENT REQUIREMENTS
 -----------------------------------------------------------------------
 [X] 1. Header Docstring included with assignment title.
-[ ] 2. Ask user for two integers (num1 and num2).
+[X] 2. Ask user for two integers (num1 and num2).
 [ ] 3. Perform 6 logical checks: (Both > 0, Both > 100, Either Even, Either < 100, Not Equal, Not Zero).
 [ ] 4. Use if/elif/else to categorize num1 (Positive/Negative/Zero).
-[ ] 5. Code is clean and uses descriptive variable names.
+[X] 5. Code is clean and uses descriptive variable names.
 [ ] 6. Upload to GitHub and paste the link below.
 -----------------------------------------------------------------------
 """
@@ -28,5 +28,10 @@ if out_air_temp < 0 and lap_no < 5:
     print("target boost pressure = 5 psi")
 elif out_air_temp < 0 and lap_no > 5 and lap_no < 9:
     print("target boost psi = 7")
+elif: out_air_temp > 0:
+    print("target boost pressure = 8 ")
+elif:
+elif:
+
 else:
-    print("temporary")
+    print("target boost psi = 30")
