@@ -28,10 +28,10 @@ if out_air_temp < 0 and lap_no < 5:
     print("target boost pressure = 5 psi")
 elif out_air_temp < 0 and lap_no > 5 and lap_no < 9:
     print("target boost psi = 7")
-elif: out_air_temp > 0:
+elif out_air_temp < 100 and lap_no < 5:
     print("target boost pressure = 8 ")
-elif:
-elif:
+# elif :
+# elif:
 
 else:
     print("target boost psi = 30")
