@@ -26,12 +26,21 @@ if lap_no < 1 or lap_no > 10:
 
 if out_air_temp < 0 and lap_no < 5:
     print("target boost pressure = 5 psi")
+elif out_air_temp < 0 and lap_no == 5:
+    print("target boost pressure = 6")
 elif out_air_temp < 0 and lap_no > 5 and lap_no < 9:
-    print("target boost psi = 7")
+    print("target boost pressure = 7")
 elif out_air_temp < 100 and lap_no < 5:
     print("target boost pressure = 8 ")
-# elif :
-# elif:
-
+elif out_air_temp < 100 and lap_no == 5:
+    print("target boost pressure = 9 ")
+elif out_air_temp < 100 and lap_no > 5 and lap_no < 9:
+    print("target boost pressure = 10")
+elif out_air_temp > 100 and lap_no < 9:
+    print("target boost pressure = 2")
+elif lap_no == 9:
+    print("target boost pressure = 15")
+elif lap_no == 10:
+    print("target boost pressure = 20")
 else:
-    print("target boost psi = 30")
+    print("logic error")
