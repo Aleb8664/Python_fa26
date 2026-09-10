@@ -7,7 +7,7 @@ ASSIGNMENT REQUIREMENTS
 [X] 3. Perform 6 logical checks: (Both > 0, Both > 100, Either Even, Either < 100, Not Equal, Not Zero).
 [X] 4. Use if/elif/else to categorize num1 (Positive/Negative/Zero).
 [X] 5. Code is clean and uses descriptive variable names.
-[ ] 6. Upload to GitHub and paste the link below.
+[X] 6. Upload to GitHub and paste the link below.
 -----------------------------------------------------------------------
 """
 
@@ -24,7 +24,7 @@ lap_no = int(input("please enter lap number as a whole integer value between 1-1
 if lap_no < 1 or lap_no > 10:
     print("please follow directions!!!")
     exit()
-
+# the logic to consider which boost pressure and power targets to run, adjusts based on outside temperature and lap number. if temperature is too low the tires are still stiff, every lap the tire gets warmer allowing for more power. the last 2 laps get the highest pressure to get that last little push to win the race. included a logic error at the end in case of a problem.
 if out_air_temp < 0 and lap_no < 5:
     print("target boost pressure = 5 psi")
 elif out_air_temp < 0 and lap_no == 5:
