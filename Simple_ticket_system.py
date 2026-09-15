@@ -24,9 +24,10 @@ while more_tickets:
             )
         except ValueError:
             print("value error")
-
-    ask = input("would you like more tickets Y/N:  ").lower()
-if ask != "y" or ask != "n":
-    print("* please enter Y for yes or N for no *")
-elif ask == "n":
-    more_tickets = False
+    while True:
+        ask = input("would you like more tickets Y/N:  ").lower()
+        if ask != "y" and ask != "n":
+            print("* please enter Y for yes or N for no *")
+        elif ask == "n":
+            more_tickets = False
+            break
