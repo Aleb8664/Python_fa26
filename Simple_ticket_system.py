@@ -11,7 +11,22 @@ ASSIGNMENT 5A: INPUT VALIDATION
 -----------------------------------------------------------------------
 """
 
+print("welcome to the Dance Dance Revolution (DDR) ticket booth\n")
 more_tickets = True
 while more_tickets:
-hfhfhfhfh you like tickets?: ")).lower
-    if 
+    while True:
+        try:
+            num_dancers = int(input("How many dancers? 1-4:  "))
+            if num_dancers >= 1 and num_dancers <= 4:
+                break
+            print(
+                f"{num_dancers} is not a valid number of dancers please enter 1-4 dancers"
+            )
+        except ValueError:
+            print("value error")
+
+    ask = input("would you like more tickets Y/N:  ").lower()
+if ask != "y" or ask != "n":
+    print("* please enter Y for yes or N for no *")
+elif ask == "n":
+    more_tickets = False
