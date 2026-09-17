@@ -34,10 +34,10 @@ Bright White: \033[97m
 """
 
 while True:
-    print("1 ")
-    print("2 ")
-    print("3 ")
-    print("4 ")
+    print("1 Balance")
+    print("2 Deposit")
+    print("3 Withdraw")
+    print("4 Zelle")
     print("5 Exit")
     try:
         user_input = int(input("\nPlease enter choice \033[96mNUMBER\033[0m:  "))
@@ -45,3 +45,16 @@ while True:
     except ValueError:
         print("\n\033[91mPlease Enter NUMERIC value\033[0m")
         continue
+    match user_input:
+        case 1:
+            print("1")
+        case 2:
+            print("2")
+        case 3:
+            print("3")
+        case 4:
+            print("4")
+        case 5:
+            print("exiting ATM")
+            break
+print("\033[31mlogic stop\033[0m")
