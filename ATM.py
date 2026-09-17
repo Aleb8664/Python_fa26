@@ -2,7 +2,7 @@
 -----------------------------------------------------------------------
 ASSIGNMENT 5A: INPUT VALIDATION
 -----------------------------------------------------------------------
-[ ] 1. Header Docstring included.
+[X] 1. Header Docstring included.
 [ ] 2. All 5 inputs have 'while' loop validation.
 [ ] 3. The more tickets loop uses .upper() and correct Boolean logic.
 [ ] 4. Include a try and except statement around the entire program. Should have one defined
@@ -41,19 +41,19 @@ while True:
     print("5 Exit")
     try:
         user_input = int(input("\nPlease enter choice \033[96mNUMBER\033[0m:  "))
-        print(user_input)
+        #print(user_input)
     except ValueError:
         print("\n\033[91mPlease Enter NUMERIC value\033[0m")
         continue
     match user_input:
         case 1:
-            print("1")
+            print("1 Balance")
         case 2:
-            print("2")
+            print("2 Deposit")
         case 3:
-            print("3")
+            print("3 Withdraw")
         case 4:
-            print("4")
+            print("4 Zelle")
         case 5:
             print("exiting ATM")
             break
