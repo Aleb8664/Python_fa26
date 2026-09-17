@@ -32,7 +32,7 @@ Bright Magenta: \033[95m
 Bright Cyan: \033[96m
 Bright White: \033[97m
 """
-
+balance = 100
 while True:
     print("1 Balance")
     print("2 Deposit")
@@ -41,20 +41,24 @@ while True:
     print("5 Exit")
     try:
         user_input = int(input("\nPlease enter choice \033[96mNUMBER\033[0m:  "))
-        #print(user_input)
+        # print(user_input)
     except ValueError:
         print("\n\033[91mPlease Enter NUMERIC value\033[0m")
         continue
     match user_input:
         case 1:
-            print("1 Balance")
+            print("1 Balance\n")
+            print(f"you have ${balance}")
         case 2:
-            print("2 Deposit")
+            print("2 Deposit\n")
+            deposit = int(input("How much would you like to deposit?:  "))
+            balance = balance + deposit
+            print(f"your total balance is ${balance}!")
         case 3:
-            print("3 Withdraw")
+            print("3 Withdraw\n")
         case 4:
-            print("4 Zelle")
+            print("4 Zelle\n")
         case 5:
-            print("exiting ATM")
+            print("exiting ATM\n")
             break
 print("\033[31mlogic stop\033[0m")
