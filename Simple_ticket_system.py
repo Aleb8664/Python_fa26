@@ -16,7 +16,7 @@ more_tickets = True
 while more_tickets:
     while True:
         try:
-            num_dancers = int(input("How many dancers? 1-4:  "))
+            num_dancers = int(input("\nHow many dancers? 1-4:  "))
             if num_dancers >= 1 and num_dancers <= 4:
                 break
             print(
@@ -27,7 +27,9 @@ while more_tickets:
     while True:
         ask = input("would you like more tickets Y/N:  ").lower()
         if ask != "y" and ask != "n":
-            print("* please enter Y for yes or N for no *")
+            print("\n* please enter Y for yes or N for no *")
         elif ask == "n":
             more_tickets = False
+            break
+        elif ask == "y":
             break
