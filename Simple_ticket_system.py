@@ -13,6 +13,7 @@ ASSIGNMENT 5A: INPUT VALIDATION
 
 print("welcome to the Dance Dance Revolution (DDR) ticket booth\n")
 more_tickets = True
+
 while more_tickets:
     while True:
         try:
