@@ -38,7 +38,6 @@ while True:
     try:
         usr_input = int(input("\nPlease input number to select option :)  "))
         print(f"\nYou have selected option {usr_input}")
-        pause_button = input("enter any key to continue: ")
         match usr_input:
             case 1:
                 print(USERNAME_DEPARTMENT)
