@@ -38,6 +38,7 @@ while True:
     try:
         usr_input = int(input("\nPlease input number to select option :)  "))
         print(f"\nYou have selected option {usr_input}")
+
         match usr_input:
             case 1:
                 print(USERNAME_DEPARTMENT)
@@ -53,6 +54,11 @@ while True:
                 pause_button = input("press enter to continue")
             case 5:
                 break
+            case _:
+                print(
+                    f"your input of {usr_input} is invalid please input a number 1-5:"
+                )
+                pause_button = input("press enter to continue")
     except:
         print("your input broke the program :b")
         pause_button = input("enter any key to continue: ")
