@@ -39,6 +39,22 @@ while True:
         usr_input = int(input("\nPlease input number to select option :)  "))
         print(f"\nYou have selected option {usr_input}")
         pause_button = input("enter any key to continue: ")
+        match usr_input:
+            case 1:
+                print(USERNAME_DEPARTMENT)
+                pause_button = input("press enter to continue")
+            case 2:
+                print("get pranked")
+                pause_button = input("press enter to continue")
+            case 3:
+                print("admin only")
+                pause_button = input("press enter to continue")
+            case 4:
+                print("temp")
+                pause_button = input("press enter to continue")
+            case 5:
+                break
     except:
-        print(f"your input {user_input} broke the program :b")
+        print("your input broke the program :b")
         pause_button = input("enter any key to continue: ")
+print("program stopped")
