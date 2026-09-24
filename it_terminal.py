@@ -27,6 +27,12 @@ password = ["I<3WATER", "Salty2211", "0utOft!me", "riverd@m22", "WinterCold123"]
 # Stored Passwords for all users (very secure)
 
 while True:
+    # Runs until user selects option (5) QUIT
     print(f"Welcome to the {DEPARTMENT} security terminal")
-
+    print("\nPlease choose an option below\n")
+    print("(1) List usernames")
+    print("(2) List passwords for each user")
+    print("(3) Change username (admin only)")
+    print("(4) Change password (only for employees and admins)")
+    print("(5) QUIT")
     break
