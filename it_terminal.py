@@ -28,11 +28,17 @@ password = ["I<3WATER", "Salty2211", "0utOft!me", "riverd@m22", "WinterCold123"]
 
 while True:
     # Runs until user selects option (5) QUIT
-    print(f"Welcome to the {DEPARTMENT} security terminal")
-    print("\nPlease choose an option below\n")
+    print(f"\nWelcome to the {DEPARTMENT} security terminal")
+    print("\nMENU\n")
     print("(1) List usernames")
     print("(2) List passwords for each user")
     print("(3) Change username (admin only)")
     print("(4) Change password (only for employees and admins)")
     print("(5) QUIT")
-    break
+    try:
+        usr_input = int(input("\nPlease input number to select option :)  "))
+        print(f"\nYou have selected option {usr_input}")
+        pause_button = input("enter any key to continue: ")
+    except:
+        print(f"your input {user_input} broke the program :b")
+        pause_button = input("enter any key to continue: ")
