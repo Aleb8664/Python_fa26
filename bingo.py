@@ -2,8 +2,8 @@
 -----------------------------------------------------------------------
 ASSIGNMENT 7A: STRING MASTERY LAB
 -----------------------------------------------------------------------
-[ ] 1. Header Docstring included.
-[ ] 2. Task 1: String Basics (Length, Indexing, ASCII) completed.
+[X] 1. Header Docstring included.
+[X] 2. Task 1: String Basics (Length, Indexing, ASCII) completed.
 [ ] 3. Task 2: The Cleanup Crew (Strip, Case, Replace) completed.
 [ ] 4. Task 3: Validation (isdigit check) completed.
 [ ] 5. Task 4: The Duck Loop (.join and direct iteration) completed.
@@ -12,15 +12,23 @@ ASSIGNMENT 7A: STRING MASTERY LAB
 
 # --- TASK 1: TUNING THE GUITAR 🎸 ---
 instrument = "Acoustic Guitar"
-# TODO: Print the length of 'instrument'
-# TODO: Print the first and last letter of 'instrument'
-# TODO: Use min() and max() to find and print the lowest and highest ASCII
+print(f"{instrument} has {len(instrument)} characters in it")
+print(f"the first letter of {instrument} is ({instrument[0]})")
+print(f"the last letter of {instrument} is ({instrument[-1]})")
+print(
+    f"the lowest ASCII in {instrument} is ({min(instrument)}) if blank that means it is a space :)"
+)
+print(
+    f"the highest ASCII in {instrument} is ({max(instrument)}) if blank that means it is a space :)"
+)
+"""
 characters
 # --- TASK 2: THE CLEANUP CREW 🎸 ---
 messy_input = " vOLUME_knob_11 "
 # TODO: Use .strip() to remove spaces
 # TODO: Use .upper() to capitalize everything
 # TODO: Use .replace() to swap the underscores "_" for spaces " "
+
 # --- TASK 3: THE VALIDATOR 🎸 ---
 serial_number = "90210"
 # TODO: Use .isdigit() to check validity.
@@ -42,3 +50,4 @@ print("\n--- Singing the Duck Song! ---")
 # 6. Increment count by 1
 # TODO: After the loop, print the "Finale" (the final version with all 🎸 emojis)
 # Hint: You'll need one more .join() and one more print block here!
+"""
