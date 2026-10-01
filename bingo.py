@@ -29,7 +29,7 @@ print(messy_input)
 print(f"({messy_input}) without spaces is ({messy_input.strip( )})")
 messy_input = messy_input.strip()
 print(f"({messy_input}) all capitalized is ({messy_input.upper()})")
-messy_input = messy_input.upper
+messy_input = messy_input.upper()
 # print(
 #     f"({messy_input}) with its '_' replaced with spaces is ({messy_input.replace("_"," ")})"
 # )
