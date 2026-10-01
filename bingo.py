@@ -71,3 +71,4 @@ print("There was a teacher who had a duck and Ducky was his Name-o")
 current_name = " ".join(duck_letters)
 print(f"({current_name}) \n" * 3)
 duck_letters[ext - 1] = "🎸"
+print("end")
