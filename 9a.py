@@ -16,7 +16,13 @@ BASES = ("Water", "Apple Juice", "Orange Juice", "Milk")
 FRUITS = ("Strawberry", "Banana", "Mango", "Blueberry")
 
 # TODO: Define get_price(size)
-
+def get_prices(size)
+    pass
 # TODO: Define blend(size, base, fruit, scoops)
-
+def blend(size, base, fruit, scoops)
+    pass
 # TODO: Define main() to collect input and call your logic
+def main()
+    print("test")
+
+main()
