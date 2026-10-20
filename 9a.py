@@ -4,7 +4,7 @@ ASSIGNMENT 9A: THE SMOOTHIE SPRINT
 -----------------------------------------------------------------------
 [X] 1. Header Docstring included.
 [X] 2. Global Constants BASES and FRUITS defined as Tuples.
-[ ] 3. Professional function get_price(size) returns a float.
+[X] 3. Professional function get_price(size) returns a float.
 [ ] 4. Professional function blend(size, base, fruit, scoops) for output.
 [ ] 5. main() function handles try/except for scoops (int).
 [ ] 6. main() calls both functions correctly.
@@ -38,10 +38,12 @@ def blend(size, base, fruit, scoops):
 
 def main():
     print("test")
-    selection = input("please select size:  ")
-    price = get_prices(selection)
+    selection_size = input("please select size:  ")
+    price = get_prices(selection_size)
     print(f"price is ${price}")
-    # TODO: make an actual menu
+    selection_fruit = input("How many fruit?:  ")
+    selection_
+    selection_scoop = input("how many scoops?:  ")
 
 
 main()
