@@ -41,12 +41,21 @@ def topping():
 
 
 def delivery():
+    # reccursion loop, function calls itself when there is an error so the user can fix the mistake. in this case the user is asked to make a selection using an integer value, if the user inputs somethig else the the program will spit out an exception and call the functuion again.
     try:
         is_delivery = int(
             input(
                 "will this yummy pizza be picked up or delivered?\n 1. Delivery ($5 charge)\n 2. Pickup ($free)\n Please enter numerical value:  "
             )
         )
+        if is_delivery == 1:
+            delivery = True
+        elif is_delivery == 2:
+            delivery == False
+        else:
+            print("ERROR NOT A VALID ANSWER pick 1 or 2")
+            delivery()
+        print(is_delivery)
     except Exception as e:
         print(f"ERROR!! {e} PLEASE ENTER NUMERICAL VALUE!")
         delivery()
